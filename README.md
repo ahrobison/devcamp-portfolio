@@ -12,7 +12,7 @@
 ### Code Example
 
 '''ruby
-DEf my_great_method
+Def my_great_method
   puts "here it is"
 end
 '''
