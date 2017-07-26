@@ -14,17 +14,13 @@
   	<p class="notice"><%= notice %></p>
   	<p class="alert"><%= alert %></p>
 
+    <%= render "shared/nav", location: 'bottom' %>
+
     <%= login_helper %>
 
     <%= yield %>
 
+    <%= source_helper("blog")%>
 
-  <%= render "shared/nav", location: 'bottom' %>
-
-<hr>
-
-  <% if session[:source] %>  
-    <p>Thanks for taking a break from <%= session[:source] %> to visit!</p>
-  <% end %>
   </body>
 </html>
