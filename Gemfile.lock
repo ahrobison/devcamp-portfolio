@@ -1,10 +1,4 @@
 GIT
-  remote: https://github.com/ahrobison/MyShadesViewTool
-  revision: d9421bbe620d536d7f45c639283e0c94914f17db
-  specs:
-    MyShadesViewTool (0.1.0)
-
-GIT
   remote: https://github.com/twbs/bootstrap-rubygem
   revision: bd3d58a56c46d1f87785298706b136b73c192b8b
   specs:
@@ -16,6 +10,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    MyShadesViewTool (0.1.0)
     actioncable (5.1.2)
       actionpack (= 5.1.2)
       nio4r (~> 2.0)
@@ -189,7 +184,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  MyShadesViewTool!
+  MyShadesViewTool (~> 0.1.0)
   bootstrap!
   byebug
   coffee-rails (~> 4.2)

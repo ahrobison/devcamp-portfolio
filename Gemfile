@@ -55,5 +55,7 @@ gem 'friendly_id', '~> 5.2', '>= 5.2.1'
 gem 'devise', '~> 4.3'
 
 gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
+
 gem 'jquery-rails'
-gem 'MyShadesViewTool', git: 'https://github.com/ahrobison/MyShadesViewTool'
+
+gem 'MyShadesViewTool', '~> 0.1.0'
