@@ -1,4 +1,10 @@
 GIT
+  remote: https://github.com/ahrobison/MyShadesViewTool
+  revision: d9421bbe620d536d7f45c639283e0c94914f17db
+  specs:
+    MyShadesViewTool (0.1.0)
+
+GIT
   remote: https://github.com/twbs/bootstrap-rubygem
   revision: bd3d58a56c46d1f87785298706b136b73c192b8b
   specs:
@@ -183,6 +189,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  MyShadesViewTool!
   bootstrap!
   byebug
   coffee-rails (~> 4.2)
