@@ -17,30 +17,20 @@
 <body>
 
   <%= render 'shared/blog_nav' %>
+  <%= render 'shared/blog_masthead' %>
 
-  <div class="blog-header">
     <div class="container">
-      <h1 class="blog-title">So...whatcha doing?</h1>
-      <p class="lead blog-description">A summary of what I've been working on.</p>
-       <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
-    </div>
-  </div>
+    
+      <div class="row">
 
-      <div class="container">
-      
-        <div class="row">
-          <%= yield %>
-          <%= render 'shared/blog_sidebar' %>
-        </div>
-
-          <footer class="blog-footer">
-            <p>Blog template built for <a href="https://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-            <p>
-              <a href="#">Back to top</a>
-            </p>
-          </footer>
-
-          <%= source_helper("blog")%>
+        <%= yield %>
+        <%= render 'shared/blog_sidebar' %>
+        
       </div>
+
+        <%= render 'shared/blog_footer' %> 
+
+        <%= source_helper("blog")%>
+    </div>
 </body>
 </html>
