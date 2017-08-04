@@ -22,4 +22,3 @@ accepts_nested_attributes_for :technologies, reject_if: lambda { |attrs| attrs['
     self.thumb_image ||= "http://via.placeholder.com/350x200"
   end
 end
-
