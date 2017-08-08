@@ -20,16 +20,24 @@
       <div class="site-wrapper-inner">
         <div class="cover-container">
 
-          <div id="background"></div>
+          <%= video_tag(
+            'test.mp4',
+            id: 'background',
+            autoplay: true,
+            loop: true,
+            muted: true,
+            poster: 'forest11.jpg'
+            )
+            %>
 
 
-            <%= render "shared/application_nav" %>
+          <%= render "shared/application_nav" %>
 
-            <%= yield %>
+          <%= yield %>
 
-            <%= render "shared/application_footer" %>
+          <%= render "shared/application_footer" %>
 
-            <%= source_helper("application") %>
+          <%= source_helper("application") %>
 
         </div>
       </div>
