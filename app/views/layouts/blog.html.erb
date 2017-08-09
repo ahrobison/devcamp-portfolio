@@ -24,13 +24,15 @@
       <div class="row">
 
         <%= yield %>
+
         <%= render 'shared/blog_sidebar' %>
-        
       </div>
 
-        <%= render 'shared/blog_footer' %> 
+      <%= render 'shared/blog_footer' %> 
 
-        <%= source_helper("blog")%>
+      <%= alerts %>
+
+      <%= source_helper("blog")%>
     </div>
 </body>
 </html>
