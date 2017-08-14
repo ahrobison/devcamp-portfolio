@@ -210,11 +210,20 @@ body {
   color: white;
 }
 
+.tech-news {
+  color: black;
+  margin: 20px;
+}
 
+.tech-news a {
+  color: #5faed3;
+}
 
-
-
-
+.tech-news > .card {
+  padding: 30px;
+  opacity: .85;
+  background-color: #68757f;
+}
 
 
 
