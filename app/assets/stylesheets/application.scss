@@ -225,7 +225,26 @@ body {
   background-color: #68757f;
 }
 
+.app-card-container {
+  color: black;
+  text-align: left;
 
+}
 
+.app-card-container > .card {
+  padding: 40px;
+}
+
+.profile-img {
+  border: 1px solid grey;
+}
+
+.shortbio {
+  margin-left: 40px;
+}
+
+.app-card-container a {
+  color: blue;
+}
 
 
