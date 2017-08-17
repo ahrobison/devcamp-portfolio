@@ -1,8 +1,20 @@
 <div class="col-sm-3 offset-sm-1 blog-sidebar">
   <div class="sidebar-module sidebar-module-inset">
-    <h4>About Aaron...</h4>
-    <p>Aaron is an aspiring developer.  When he isn't studying and attempting to code, he plays husband, father of four, Cub Scout den leader, and blackjack dealer.</p>
+    <h4>About me...</h4>
+    <p>I'm an aspiring developer.  When I am not studying and attempting to code, I'm playing husband, father of four, Cub Scout den leader, and semi-professional-amature blackjack dealer.</p>
   </div>
+
+
+  <%= source_helper("alert alert-info blog-sidebar-source") %>
+
+
+  <div class="sidebar-module">
+    <h4>Topics</h4>
+    <% @side_bar_topics.each do |topic| %>
+      <p><%= link_to topic.title, topic_path(topic) %></p>
+    <% end %>
+  </div> 
+
   
   <div class="sidebar-module">
     <h4>Elsewhere</h4>
@@ -12,5 +24,4 @@
       <li><a href="#"><%= fa_icon "facebook" %></a></li>
     </ol>
   </div>
-</div><!-- /.blog-sidebar -->
-
+</div>
